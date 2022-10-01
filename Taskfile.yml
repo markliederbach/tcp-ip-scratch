@@ -1,0 +1,11 @@
+version: "3"
+
+vars:
+  TOOL_BIN:
+    sh: echo "$(pwd)/bin"
+
+tasks:
+  deps:
+    desc: Set up your local development environment
+    cmds:
+      - cmd: mkdir -p {{.TOOL_BIN}}
